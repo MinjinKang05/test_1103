@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정동야행 - 밤에 만나는 역사, 시간여행</title>
+    <meta name="description" content="정동의 역사 속으로 떠나는 특별한 야행 투어. 대한제국의 숨결이 담긴 문화유산을 가장 몰입감 높은 밤의 경험으로 만나보세요.">
+    
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <a href="#">정동야행</a>
+            </h1>
+            <nav>
+                <div class="mobile-menu-wrapper">
+                    <ul>
+                        <li><a href="#about">소개</a></li>
+                        <li><a href="#tour">투어</a></li>
+                        <li><a href="#history">발자취</a></li>
+                        <li><a href="#news">소식</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-icons">
+                <button type="button" class="icon-button" id="search-trigger" aria-label="검색 열기">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button type="button" class="icon-button mobile-menu-trigger" aria-label="메뉴 열기" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg-slider">
+                <div class="hero-bg-slide" style="background-image: url('image/high.avif');"></div>
+                <div class="hero-bg-slide" style="background-image: url('image/202506251809466152_l.jpg');"></div>
+                <div class="hero-bg-slide" style="background-image: url('image/3114634_image2_1.jpg');"></div>
+                <div class="hero-bg-slide" style="background-image: url('image/AKR20240516033000004_08_i_P4.jpg');"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-text">
+                <span class="sub-heading">
+                    <span class="hero-line hero-line-0">밤에 만나는 역사</span>
+                </span>
+                <h1>
+                    <span class="hero-line hero-line-1"><span class="highlight">夜行</span>, 시간여행</span>
+                </h1>
+                <p>
+                    <span class="hero-line hero-line-2">정동의 역사 속으로 떠나는 특별한 야행 투어</span>
+                </p>
+            </div>
+            
+            <div class="hero-pagination"></div>
+        </section>
+
+        <section class="quick-menu">
+            <div class="container">
+                <div class="quick-icons">
+                    <a href="#tour" class="quick-icon">
+                        <i class="fa-solid fa-moon"></i>
+                        <p>야행 투어</p>
+                    </a>
+                    <a href="#reservation" class="quick-icon">
+                        <i class="fa-solid fa-users"></i>
+                        <p>그룹 예약</p>
+                    </a>
+                    <a href="#courses" class="quick-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <p>코스 정보</p>
+                    </a>
+                    <a href="#contact" class="quick-icon">
+                        <i class="fa-solid fa-headset"></i>
+                        <p>고객센터</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title">정동의 역사를 밤새 거닐다</h2>
+                <p>정동은 서울의 중심 속에서 가장 오래된 역사를 간직하고 있습니다.<br>
+                우리의 야행 투어는 낮에는 볼 수 없는 정동의 야경과 함께 숨겨진 이야기를 전합니다.</p>
+            </div>
+        </section>
+
+        <section class="stats-section" aria-labelledby="stats-title">
+            <h2 id="stats-title" class="visually-hidden">정동야행 통계</h2>
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stats-item">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="stats-number">1,524,300+</span>
+                        <p class="stats-label">누적 방문객</p>
+                    </div>
+                    <div class="stats-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="stats-number">98%</span>
+                        <p class="stats-label">투어 만족도</p>
+                    </div>
+                    <div class="stats-item">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span class="stats-number">250+</span>
+                        <p class="stats-label">진행된 투어</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="info-section" aria-labelledby="info-title">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-text">
+                        <div class="accent-bar"></div>
+                        <h2 id="info-title">정동의 길잡이</h2>
+                        <p>
+                            대한제국의 숨결이 담긴 문화유산을 증강현실(AR),
+                            라이팅, 스토리텔링을 융합하여
+                            가장 몰입감 높은 '밤의 경험(Night Experience)'을 선사합니다.
+                        </p>
+                    </div>
+                    <div class="info-image" style="background-image: url('image/programs_yagyeong_01.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+<section class="youtube-section">
+            <div class="container">
+                <h2>정동야행 공식 유튜브 채널</h2>
+                <p class="section-description">
+                    정동의 밤을 영상으로 만나요!<br>
+                    정동야행의 현장감 넘치는 축제 모습과 다채로운 프로그램을 유튜브에서 확인해보세요.
+                </p>
+                <div class="youtube-grid">
+                    <div class="video-card">
+                        <div class="video-iframe-wrapper" 
+                             data-src="https://www.youtube.com/embed/luiAb-9hpsc?rel=0&modestbranding=1&playsinline=1&autoplay=1"
+                             style="background-image: url('https://i.ytimg.com/vi/luiAb-9hpsc/hqdefault.jpg');"
+                             title="2분으로 몰아보는 2025 정동야행">
+                            <div class="video-play-icon">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>2분으로 몰아보는 2025 정동야행</h3>
+                            <p>밤길 속 생생한 순간을 영상으로 만나보세요</p>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                         <div class="video-iframe-wrapper" 
+                             data-src="https://www.youtube.com/embed/Vsd_RuATL9A?rel=0&modestbranding=1&playsinline=1&autoplay=1"
+                             style="background-image: url('https://i.ytimg.com/vi/Vsd_RuATL9A/hqdefault.jpg');"
+                             title="정동의 빛, 미래를 수놓다 「2025 정동야행(夜行)」">
+                            <div class="video-play-icon">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>"정동의 빛, 미래를 수놓다" 「2025 정동야행(夜行)」</h3>
+                            <p>정동야행의 특별한 감동을 영상으로 즐겨보세요</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tour-gallery-section" id="tour" aria-labelledby="tour-title">
+            <div class="container">
+                <div class="gallery-header">
+                    <h2 id="tour-title">정동의 밤, 모두가 하나 되는 축제</h2>
+                    <p>정동야행은 단순한 행사가 아니라 누구나 함께 즐기고 추억을 만드는 축제의 장입니다. <br>거리 공연, 불빛 행렬, 전통 체험까지 도심 속에서 만나는 특별한 밤을 느껴보세요!</p>
+                </div>
+                <div class="gallery-wrapper">
+                    <button class="gallery-btn prev" aria-label="이전 갤러리">‹</button>
+                    <div class="gallery-slider-container">
+                        <div class="gallery-track">
+                            <div class="gallery-card" style="background-image: url('image/imgi_2_s1_card01.jpg');">
+                                <div class="gallery-overlay"><p>빛의 향연</p></div>
+                            </div>
+                            <div class="gallery-card" style="background-image: url('image/imgi_3_s1_card02.jpg');">
+                                <div class="gallery-overlay"><p>전통 공연</p></div>
+                            </div>
+                            <div class="gallery-card" style="background-image: url('image/imgi_9_s1_card08.jpg');">
+                                <div class="gallery-overlay"><p>야경 투어</p></div>
+                            </div>
+                            <div class="gallery-card" style="background-image: url('image/imgi_5_s1_card04.jpg');">
+                                <div class="gallery-overlay"><p>문화 체험</p></div>
+                            </div>
+                            <div class="gallery-card" style="background-image: url('image/imgi_35_swiper_item07.jpg');">
+                                <div class="gallery-overlay"><p>역사 탐방</p></div>
+                            </div>
+                            <div class="gallery-card" style="background-image: url('image/imgi_10_s1_card09.jpg');">
+                                <div class="gallery-overlay"><p>야간 행렬</p></div>
+                            </div>
+                            <div class="gallery-card" style="background-image: url('image/imgi_3_s1_card02.jpg');">
+                                <div class="gallery-overlay"><p>거리 축제</p></div>
+                            </div>
+                            <div class="gallery-card" style="background-image: url('image/imgi_6_s1_card05.jpg');">
+                                <div class="gallery-overlay"><p>특별한 밤</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="gallery-btn next" aria-label="다음 갤러리">›</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="history-section" id="history" aria-labelledby="history-title">
+            <div class="container">
+                <div class="history-header">
+                    <h2 id="history-title">정동야행, 시간 속을 걷다</h2>
+                    <p>매년 이어온 축제의 발자취</p>
+                </div>
+                
+                <div class="history-item align-right">
+                    <div class="history-image" style="background-image: url('image/imgi_39_3415136752_OE8dzbsq_6ce530a7cf1c0692b5c3e211eb460f5f2425c52e.jpg');"></div>
+                    <div class="history-text">
+                        <h3>2022년, 정동의 거리에 별빛이 내립니다.</h3>
+                        <p>걷는 길마다 이야기가 피어나고,<br>
+                        그 밤의 낭만이 다시 시작됩니다.</p>
+                    </div>
+                </div>
+
+                <div class="history-item align-left">
+                    <div class="history-image" style="background-image: url('image/imgi_38_3415136752_riKpyhbf_b2acaea167d8e24c4f317584221b7a7cad626af4.jpg');"></div>
+                    <div class="history-text">
+                        <h3>2023년, 별빛이 머무는 정동의 밤.</h3>
+                        <p>두 밤 동안 펼쳐지는 역사·문화·빛의 축제,<br>
+                        중심(정동)에서 꿈을 위한 랑데부를 갖습니다.</p>
+                    </div>
+                </div>
+
+                <div class="history-item align-right">
+                    <div class="history-image" style="background-image: url('image/imgi_37_3415136752_XWDbE0zi_eac95e467df852a8c08b2cff8a0ff45c910466ee.jpg');"></div>
+                    <div class="history-text">
+                        <h3>2024 정동야행 — 시간의 빛, 정동에서 만나다.</h3>
+                        <p>오래된 시간 속, 새로운 빛으로 물드는 거리. <br>
+                        그 길 위에서 정동의 이야기가 다시 피어납니다.</p>
+                    </div>
+                </div>
+
+                <div class="history-item align-left">
+                    <div class="history-image" style="background-image: url('image/main_poster.jpg');"></div>
+                    <div class="history-text">
+                        <h3>2025 정동야행, 또 한 번의 별빛 여정.</h3>
+                        <p>역사와 낭만, 그리고 미래가 공존하는 그 밤— <br>
+                        당신의 발걸음이 정동의 시간을 완성합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-labelledby="cta-title">
+            <h2 id="cta-title" class="visually-hidden">정동야행 주요 프로그램</h2>
+            <div class="cta-slider-wrapper">
+                <div class="cta-slider-track">
+                    <div class="cta-card">
+                        <div class="cta-card-content" style="background-image: url('image/imgi_30_swiper_item01.jpg');">
+                            <p class="cta-card-subtitle">달빛에 빛나는 정동의 문화</p>
+                            <h2 class="cta-card-title">야화 (夜花)</h2>
+                        </div>
+                    </div>
+                    <div class="cta-card">
+                        <div class="cta-card-content" style="background-image: url('image/imgi_31_swiper_item02.jpg');">
+                            <p class="cta-card-subtitle">설렘 가득한 정동의 피크닉</p>
+                            <h2 class="cta-card-title">야로 (夜路)</h2>
+                        </div>
+                    </div>
+                    <div class="cta-card">
+                         <div class="cta-card-content" style="background-image: url('image/imgi_32_swiper_item03.jpg');">
+                            <p class="cta-card-subtitle">추억 속의 역사 공방</p>
+                            <h2 class="cta-card-title">야사 (夜史)</h2>
+                        </div>
+                    </div>
+                    <div class="cta-card">
+                        <div class="cta-card-content" style="background-image: url('image/imgi_33_swiper_item04.jpg');">
+                            <p class="cta-card-subtitle">동화 같은 예술공연</p>
+                            <h2 class="cta-card-title">야설 (夜設)</h2>
+                        </div>
+                    </div>
+                    <div class="cta-card">
+                        <div class="cta-card-content" style="background-image: url('image/imgi_34_swiper_item05.jpg');">
+                            <p class="cta-card-subtitle">별을 품은 정동의 밤</p>
+                            <h2 class="cta-card-title">야경 (夜景)</h2>
+                        </div>
+                    </div>
+                    <div class="cta-card">
+                         <div class="cta-card-content" style="background-image: url('image/imgi_35_swiper_item06.jpg');">
+                            <p class="cta-card-subtitle">달콤한 정동의 맛</p>
+                            <h2 class="cta-card-title">야식 (夜食)</h2>
+                        </div>
+                    </div>
+                    <div class="cta-card">
+                        <div class="cta-card-content" style="background-image: url('image/imgi_36_swiper_item07.jpg');">
+                            <p class="cta-card-subtitle">반짝거리는 아트마켓</p>
+                            <h2 class="cta-card-title">야시 (夜市)</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-slider-nav">
+                    <span class="cta-nav-number current">01</span>
+                    <button class="cta-nav-btn prev" aria-label="이전 슬라이드"><i class="fa-solid fa-arrow-left"></i></button>
+                    <span class="cta-nav-divider">/</span>
+                    <span class="cta-nav-number total">07</span>
+                    <button class="cta-nav-btn next" aria-label="다음 슬라이드"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="archive-section" aria-labelledby="archive-title">
+            <div class="container">
+                <h2 id="archive-title">정동야행의 아카이빙을 확인하세요</h2>
+                <div class="archive-slider-wrapper">
+                    <button class="archive-btn prev" aria-label="이전 아카이브">‹</button>
+                    <div class="archive-slider-container">
+                        <div class="archive-slider-track">
+                            <div class="archive-item"><img src="image/imgi_37_3415136752_XWDbE0zi_eac95e467df852a8c08b2cff8a0ff45c910466ee.jpg" alt="정동야행 2024년 포스터"></div>
+                            <div class="archive-item"><img src="image/imgi_38_3415136752_riKpyhbf_b2acaea167d8e24c4f317584221b7a7cad626af4.jpg" alt="정동야행 2023년 포스터"></div>
+                            <div class="archive-item"><img src="image/imgi_39_3415136752_OE8dzbsq_6ce530a7cf1c0692b5c3e211eb460f5f2425c52e.jpg" alt="정동야행 2022년 포스터"></div>
+                            <div class="archive-item"><img src="image/imgi_41_3415136752_5OQlLChc_75a99c9defa64d210c22d7bfa0a90e3271cd9645.jpg" alt="정동야행 2021년 포스터"></div>
+                            <div class="archive-item"><img src="image/imgi_42_3415136752_YzI2aOTy_8ed5530e6c5489070595df220b4e6ab336eb7f41.jpg" alt="정동야행 2020년 포스터"></div>
+                            <div class="archive-item"><img src="image/imgi_43_3415136752_mcXCq4W8_a7d27ca38cad724e271ae123548f560d1749eaac.jpg" alt="정동야행 2019년 포스터"></div>
+                            <div class="archive-item"><img src="image/imgi_45_3415136752_6UwiGsuk_63a2cb13a2445f860fa2731d2e6c65a63b81a6e6.jpg" alt="정동야행 2018년 포스터"></div>
+                            <div class="archive-item"><img src="image/imgi_46_1982150079_YGevQxXV_e88bbdfde6303638e2abb80a0150b372f3048bb6.jpg" alt="정동야행 2017년 포스터"></div>
+                        </div>
+                    </div>
+                    <button class="archive-btn next" aria-label="다음 아카이브">›</button>
+                </div>
+                <button class="more-view-btn">전체 아카이브 보기</button>
+            </div>
+        </section>
+
+        <section class="notice-section" id="news" aria-labelledby="news-title">
+            <div class="container">
+                <div class="notice-container">
+                    <div class="notice-left">
+                        <h3 id="news-title">최근 소식</h3>
+                        <p>정동야행의 최신 뉴스와 업데이트를 확인하세요. 새로운 코스 소개, 이벤트 정보, 계절별 투어 안내 등 다양한 소식을 전달드립니다.</p>
+                    </div>
+                    <div class="notice-list">
+                        <div class="notice-item">
+                            <div class="notice-icon"></div>
+                            <div class="notice-text">
+                                <p>겨울 야행 패키지 오픈</p>
+                                <p>2024.12.15</p>
+                            </div>
+                        </div>
+                        <div class="notice-item">
+                            <div class="notice-icon"></div>
+                            <div class="notice-text">
+                                <p>11월 투어 예약 오픈</p>
+                                <p>2024.10.20</p>
+                            </div>
+                        </div>
+                        <div class="notice-item">
+                            <div class="notice-icon"></div>
+                            <div class="notice-text">
+                                <p>새로운 야경 포토 명소</p>
+                                <p>2024.10.10</p>
+                            </div>
+                        </div>
+                        <div class="notice-item">
+                            <div class="notice-icon"></div>
+                            <div class="notice-text">
+                                <p>VIP 멤버십 출시</p>
+                                <p>2024.09.30</p>
+                            </div>
+                        </div>
+                        <div class="notice-item">
+                            <div class="notice-icon"></div>
+                            <div class="notice-text">
+                                <p>가을밤 특별 공연 안내</p>
+                                <p>2024.09.15</p>
+                            </div>
+                        </div>
+                        <div class="notice-item">
+                            <div class="notice-icon"></div>
+                            <div class="notice-text">
+                                <p>정동야행 공식 굿즈 런칭</p>
+                                <p>2024.09.01</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>회사소개</h4>
+                    <a href="#">정동야행 소개</a>
+                    <a href="#">팀 소개</a>
+                    <a href="#">언론 보도</a>
+                </div>
+                <div class="footer-section">
+                    <h4>고객지원</h4>
+                    <a href="#">예약 안내</a>
+                    <a href="#">자주묻는질문</a>
+                    <a href="#">고객센터</a>
+                </div>
+                <div class="footer-section">
+                    <h4>법률정보</h4>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 정동야행. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="search-overlay-content">
+            <button class="search-overlay-close" id="search-close" aria-label="검색 닫기">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <form action="#" class="search-form">
+                <input type="search" class="search-input" placeholder="정동의 역사를 검색해보세요..." aria-label="검색어 입력">
+                <button type="submit" class="search-submit" aria-label="검색하기">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <div class="search-tags">
+                <a href="#">#덕수궁</a>
+                <a href="#">#돌담길</a>
+                <a href="#">#야경투어</a>
+                <a href="#">#역사체험</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="notice-modal" id="notice-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="notice-modal-overlay"></div>
+        <div class="notice-modal-content">
+            <button class="notice-modal-close" id="notice-modal-close" aria-label="모달 닫기">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="notice-modal-header">
+                <h2 id="notice-modal-title">공지사항 제목</h2>
+                <p id="notice-modal-date">2025.10.30</p>
+            </div>
+            <div class="notice-modal-body">
+                <div id="notice-modal-text">
+                    <p>공지사항 상세 내용이 여기에 표시됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="gallery-modal-overlay"></div>
+        <div class="gallery-modal-content">
+            <button class="gallery-modal-close" id="gallery-modal-close" aria-label="모달 닫기">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="gallery-modal-image-container">
+                <img src="" alt="확대된 갤러리 이미지" id="gallery-modal-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
